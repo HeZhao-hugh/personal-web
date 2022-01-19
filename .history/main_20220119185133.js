@@ -6,15 +6,13 @@ function createNav() {
     // changeNavItem();
 
     document
-        .querySelectorAll('a.navbar-item')
+        .querySelectorAll('.navbar-item')
         .forEach(function (element) {
             element.onclick = function (event) {
                 event.preventDefault();
 
                 var to = event.target.getAttribute('href');
-                console.log(to);
                 push(to);
-
             };
         });
 

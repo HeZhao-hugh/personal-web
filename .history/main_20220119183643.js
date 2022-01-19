@@ -1,20 +1,18 @@
 function createNav() {
     var previous = '';
-    var current = 'HOME';
+    var current = 'Home';
 
     changePage();
     // changeNavItem();
 
     document
-        .querySelectorAll('a.navbar-item')
+        .querySelectorAll('.nav-link')
         .forEach(function (element) {
             element.onclick = function (event) {
                 event.preventDefault();
 
                 var to = event.target.getAttribute('href');
-                console.log(to);
                 push(to);
-
             };
         });
 
@@ -23,7 +21,7 @@ function createNav() {
         current = to;
 
         changePage();
-        // changeNavItem();
+        changeNavItem();
     }
 
     function changePage() {

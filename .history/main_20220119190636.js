@@ -6,7 +6,7 @@ function createNav() {
     // changeNavItem();
 
     document
-        .querySelectorAll('a.navbar-item')
+        .querySelectorAll('.navbar-item')
         .forEach(function (element) {
             element.onclick = function (event) {
                 event.preventDefault();

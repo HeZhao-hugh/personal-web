@@ -33,7 +33,9 @@
   }
   .page--active {
     display: block;
-
+    position: relative;
+    visibility: visible;
+    opacity: 1;
   }
   
   
